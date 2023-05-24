@@ -1,0 +1,110 @@
+<!-- /*
+ * @Author: 吴雅 
+ * @Date: 2021-05-19 14:12:33 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2021-05-19 14:13:22
+ */
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style/pub-style.css">
+    <link rel="stylesheet" href="static/style/user.css">
+
+    <title>个人中心</title>
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar">
+        <div class="container">
+            <div class="navbar-header" style="width:48%">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-header">
+                    <p class="navbar-brand font-special" href="#">学好党史，薪火相传</p>
+                    <p class="navbar-brandE font-special" href="#"> X U E D A N G S H I</p>
+                </div>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="width:100%">
+                    <li><a href="Home.html">网站首页</a></li>
+                    <li><a href="Article.html">党建要闻</a></li>
+                    <li><a href="Question.html">党史问答</a></li>
+                    <li class="loged"><a href="User.html">个人中心</a></li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="user-container">
+        <div class="person">
+            <!-- 基本信息、操作按钮 -->
+            <div class="base-info">
+                <img src="static/image/头像.png" alt="当前未登录" class="photo" style="width:36%">
+                <div class="mes-out">
+                    <div class="name clickToLog">点击登录</div>
+                    <div class="divline"></div>
+                    <button type="submit" class="logout-btn">退出登陆</button>
+                </div>
+            </div>
+            <!-- 个人信息 -->
+            <div class="per-mes">
+                <div class="mes user-sign"></div>
+                <div class="mes score"></div>
+            </div>
+            <!-- 功能区 -->
+            <div class="function">
+                <div class="head">
+                    <h3>我的评论</h3>
+                    <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#2d482d SIZE=3>
+                </div>
+
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <footer>
+            <div class="introduceL">
+                <p class="intL1">站名：学习党史，薪火相传 | 献礼建党百年网站</p>
+                <p class="intL4">邮箱：111111111@qq.com</p>
+            </div>
+        </footer>
+        <!-- 登陆页面 -->
+        <div class="loginPage modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="loginBox">
+                <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+                <div class="logo">
+                    我心向党
+                </div>
+                <div class="items"><input class="name" type="text" placeholder="请输入用户名"></div>
+                <div class="items"><input class="pwd" type="password" placeholder="请输入密码"></div>
+                <div class="sex-form">
+                    <span class="sex-info">性别：</span>
+                    <div class="radio-sex"><input type="radio" class="sex" value="男" />男</div>
+                    <div class="radio-sex"><input type="radio" class="sex" value="女" />女</div>
+                </div>
+                <button class="log" type="submit">登陆</button>
+                <button class="sign" type="submit">注册</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="src/page/user_control.js"></script>
+</body>
+
+</html>

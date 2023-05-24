@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>党史问答</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style/pub-style.css">
+    <link rel="stylesheet" href="static/style/question.css">
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+
+    <nav class="navbar navbar">
+        <div class="container">
+            <div class="navbar-header" style="width:48%">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-header">
+                    <p class="navbar-brand font-special" href="#">学好党史，薪火相传</p>
+                    <p class="navbar-brandE font-special" href="#"> X U E D A N G S H I</p>
+                </div>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="width:100%">
+                    <li><a href="Home.html">网站首页</a></li>
+                    <li><a href="Article.html">党建要闻</a></li>
+                    <li><a href="Question.html">党史问答</a></li>
+                    <li class="loged"><a href="User.html">个人中心</a></li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="reply">
+        
+        <div class="question-Box">
+            <div class="question-content">
+            </div>
+            <div class="answer-Box">
+                <div class="options">
+                    <button type="radio" class="option" id="A"></button>
+                    <button type="radio" class="option" id="B"></button>
+                    <button type="radio" class="option" id="C"></button>
+                    <button type="radio" class="option" id="D"></button>
+                </div>
+                <!-- <button type="submit" class="sub-answer">提交答案</button> -->
+            </div>
+        </div>
+        <div class="btn-get">开始答题</div>
+    </div>
+    <footer>
+        <div class="introduceL">
+            <p class="intL1">站名：学习党史，薪火相传 | 献礼建党百年网站</p>
+            <p class="intL4">邮箱：111111111@qq.com</p>
+        </div>
+    </footer>
+    <!-- 登陆页面 -->
+    <div class="loginPage modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="loginBox">
+            <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+            <div class="logo">
+                我心向党
+            </div>
+            <div class="items"><input class="name" type="text" placeholder="请输入用户名"></div>
+            <div class="items"><input class="pwd" type="password" placeholder="请输入密码"></div>
+            <div class="sex-form">
+                <span class="sex-info">性别：</span>
+                <div class="radio-sex"><input type="radio" class="sex" value="男" />男</div>
+                <div class="radio-sex"><input type="radio" class="sex" value="女" />女</div>
+            </div>
+            <button class="log" type="submit">登陆</button>
+            <button class="sign" type="submit">注册</button>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="src/page/user_control.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* 导航条css */
+.nav-bg {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:3px solid rgb(183,207,182); 
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar-brandE {
+    font-size: 10px;
+}
+
+.navbar {
+    padding: 3vh 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav {
+    padding-inline-start: 0px;
+}
+
+ul.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar{
+    margin:0;
+    border:none;
+    padding: 0;
+}
+
+p,
+a {
+    color: rgb(8, 8, 8);
+}
+
+
+p.navbar-brandE {
+    width: 40%;
+    text-align: center;
+}
+
+.navbar-nav {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav li {
+    font-size: 15px;
+}
+
+.font-special {
+    font-family: 宋体, 新宋体, sans-serif;
+}
+
+ul.navbar-nav>li>a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+/* 登陆界面css */
+.loginBox {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10vh 30vw;
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px
+}
+
+.loginBox .logo {
+    font-family: 宋体, 新宋体, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 4rem;
+}
+
+.loginBox .items {
+    height: 10%;
+    width: 70%;
+}
+
+.loginBox .items input {
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.loginBox button {
+    display: block;
+    width: 70%;
+    height: 10%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    background-color: #728b72;
+    color: white;
+    border: none;
+}
+
+.sex-form {
+    width: 70%;
+    justify-content: flex-start;
+    display: none;
+}
+
+.radio-sex {
+    margin: 0 5px;
+}

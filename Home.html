@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末设计</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style/pub-style.css">
+    <link rel="stylesheet" href="static/style/index.css">
+</head>
+
+<body style="height:100vh;background-color:black">
+
+
+    <!-- 导航栏 -->
+    <div class="nav-bg">
+
+        <nav class="navbar navbar-fixed-top">
+            <div class="container" style="border: none;">
+                <div class="navbar-header" style="width:48%">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-header">
+                        <p class="navbar-brand font-special" href="#">学好党史，薪火相传</p>
+                        <p class="navbar-brandE font-special" href="#"> X U E D A N G S H I</p>
+                    </div>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" style="width:100%">
+                        <li><a href="Home.html">网站首页</a></li>
+                        <li><a href="Article.html">党建要闻</a></li>
+                        <li><a href="Question.html">党史问答</a></li>
+                        <li class="init"><a data-toggle="modal" data-target="#loginModal">登陆/注册</a></li>
+                        <li class="loged"><a href="User.html">个人中心</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse -->
+            </div>
+        </nav>
+        <img src="static/image/竖屏.jpg" alt="背景图片" class="bg-imag" />
+    </div>
+
+    <!-- 块2 -->
+    <div class="block-content">
+        <div class="info-content">
+            <p class="text_communistE">THE COMMUNIST PARTY</p>
+            <p class="text_communist">中国共产党</p>
+            <p class="line"></p>
+            <p class="text_content">中国共产党在近百年艰辛的奋斗历史中，<br>积累了大量的党建经验、斗争经验、执政经验、社会主义建设的经验等，<br>
+                以及经受挫折失败的教训，是我们宝贵的财富。这些经验是几代中国共产党人的智慧结晶，<br>是我们治党治国的宝贵精神财富。<br>
+                认真学习党史既是一次把握规律、把握未来的理论学习，也是一次坚定信仰、坚定方向的党性教育。<br>
+                通过学习必将增强我们对党的感情认同、理论认同、政治认同。<br>对继承和发扬光荣革命传统、
+                党的优良作风，对提高自己的认识能力和<br>处理实际问题的能力都是十分必要的和有益的。
+            </p>
+        </div>
+        <div class="info-imag">
+            <img src="static/image/共产党简介.jpg" alt="共产党简介" class="info-photo">
+        </div>
+    </div>
+
+    <div class="blocktwo-content">
+        <div class="blocktwo_header">
+            <h1 class="blocktwo_h1">LINE FOR PARTY BUILDING</h1>
+            <h2 class="blocktwo_h2">建党百年史</h2>
+            <div class="line_two"></div>
+            <div class="history">
+                <div class="loader">
+                    <div class="loading_1">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <p class="noticeP">点击红点，开始学习！</p>
+                </div>
+                <div class="years"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="introduceL">
+            <p class="intL1">站名：学习党史，薪火相传|献礼建党百年网站</p>
+            <p class="intL2">联系电话：11111111111</p>
+            <p class="intL3">联系方式：QQ：111111111</p>
+            <p class="intL4">邮箱：111111111@qq.com</p>
+        </div>
+        <div class="introduceR">
+            <p class="intR1">网站首页</p>
+            <p class="intR1">党建要问</p>
+            <p class="intR1">党史问答</p>
+            <p class="intR1">个人中心</p>
+        </div>
+    </footer>
+    </div> <!-- /container -->
+    <!-- 登陆页面 -->
+    <div class="loginPage modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="loginBox">
+            <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+            <div class="logo">
+                我心向党
+            </div>
+            <div class="items"><input class="name" type="text" placeholder="请输入用户名"></div>
+            <div class="items"><input class="pwd" type="password" placeholder="请输入密码"></div>
+            <div class="sex-form">
+                <span class="sex-info">性别：</span>
+                <div class="radio-sex"><input type="radio" class="sex" value="男" />男</div>
+                <div class="radio-sex"><input type="radio" class="sex" value="女" />女</div>
+            </div>
+            <button class="log" type="submit">登陆</button>
+            <button class="sign" type="submit">注册</button>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="src/page/user_control.js"></script>
+    <script src="src/page/index.js"></script>
+</body>
+
+</html>

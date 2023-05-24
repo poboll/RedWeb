@@ -1,0 +1,42 @@
+<?php
+    session_start();
+    //输出页头
+    header('Content-Type: text/json;charset=utf-8');
+    //初始参数设置
+    $code=0;
+    $data=[];
+    $msg=["当前未登录","已登录"];
+    //连接数据库
+    include("functions.php");
+    include("conn.php");
+    if(isset($_SESSION['username'])){
+        $code=$_SESSION['logFlag'];
+        $data["user_info"]=$_SESSION["username"];
+        //搜索该user的基本信息
+        //获取user_id,user_sex
+        $sql="select user_id,user_sex,user_score from users where user_name=?";
+        $stmt=mysqli_prepare($conn,$sql);
+        mysqli_stmt_bind_param($stmt,'s',$_SESSION["username"]);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt,$ID,$SEX,$SCORE);
+        while(mysqli_stmt_fetch($stmt)){
+            $data["user_id"]=$ID;
+            $data["user_sex"]=$SEX;
+            $data["user_score"]=$SCORE;
+            $code=1;
+        }
+        mysqli_stmt_close($stmt);
+        $sql="select message_content,message_status from messages where user_id=?";
+        $stmt=mysqli_prepare($conn,$sql);
+        mysqli_stmt_bind_param($stmt,'i',$data["user_id"]);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt,$content,$status);
+        $index=0;
+        while(mysqli_stmt_fetch($stmt)){
+            $data["user_content"][$index]["content"]=$content;
+            $data["user_content"][$index]["status"]=$status;
+            $index++;
+        }
+    }
+    getApiResult($code,$msg[$code],$data);
+?>

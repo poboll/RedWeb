@@ -1,0 +1,145 @@
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#f4f5f5;
+    height:100vh;
+}
+
+/* 个人页面css */
+.user-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.person{
+    padding: 2% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f4f5f5;
+    /* height: 100vh; */
+    align-content: flex-start;
+    row-gap: 4%;
+}
+
+.person *{
+    margin:1%;
+}
+
+/* 基本操作区css */
+
+.base-info{
+    width:42%;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    background-color: white;
+}
+
+.mes-out{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4ex;
+}
+
+.divline{
+    width:1px;
+    height:100%;
+    background-color:black;
+}
+
+.logout-btn{
+    border: none;
+    background: none;
+}
+
+/* 个人信息区css */
+
+.per-mes{
+    width:42%;
+    display:flex;
+    flex-direction:column;
+    row-gap: 6%;
+}
+
+.mes{
+    padding:1% 4%;
+    width:100%;
+    height:40%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.score{
+    font-size: 30px;
+}
+
+/* 功能区css */
+.function{
+    width:100%;
+}
+.head{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.person-mes,.edit-Box{
+    display:none;
+    padding-left: 3ex;
+    text-align:left;
+    margin:2% 5%;
+    width:90%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.edit-Box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.editContent{
+    width:90%;
+}
+
+.person-mes{
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.control{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+footer{
+    background-color: rgb(43, 54, 54);
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    position: relative;
+    bottom: 0;
+}
+.introduceL{
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    margin-left: -16vh;
+}
+
+.introduceL p{
+    color:white;
+    text-align: center;
+}
